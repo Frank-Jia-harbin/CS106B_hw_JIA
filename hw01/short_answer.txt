@@ -1,0 +1,81 @@
+Before submitting this file, make sure that there are no more TODO
+placeholders remaining in the file (and remove this comment too).
+
+Perfect Numbers
+---------------
+
+Before submitting this file, make sure that there are no more TODO
+placeholders remaining in the file (and remove this comment too).
+
+Q1. Roughly how long did it take your computer to do the search? How many perfect numbers were found and what were they?
+A1. TODO:About 6.199s. 4 perfect number; 6,28,496,8128.
+
+Q2. Record the timing results for `findPerfects` that you observed into a table.
+A2. TODO:
+             ｜         ｜
+        15000｜   0.953s｜
+  -----------｜---------｜----------------
+             ｜         ｜
+        30000｜   3.612s｜
+  -----------｜---------｜----------------
+             ｜         ｜
+        60000｜  13.771s｜
+  -----------｜---------｜----------------
+             ｜         ｜
+       120000｜  54.785s｜
+  -----------｜---------｜----------------
+             ｜         ｜
+Q3. Does it take the same amount of work to compute `isPerfect` on the number 10 as it does on the number 1000? Why or why not? Does it take the same amount of work for `findPerfects` to search the range of numbers from 1-1000 as it does to search the numbers from 1000-2000? Why or why not?
+A3. TODO:For 'isPerfect' number 10 and 1000 need different time. Cause it will cost more time when doing the function 'divisorSum' for 1000.
+         For 'findPerfect' the same reason.
+
+Q4. Extrapolate from the data you gathered and make a prediction: how long will it take `findPerfects` to reach the fifth perfect number?
+A4. TODO: 33,000,000/120000 = 275 times. It will take about 48 days.
+
+Q5. Do any of the tests still pass even with this broken function? Why or why not?
+A5. TODO: can not if it is in the same student_test. Can if it is in different test. test do not change anything in the origin function.
+
+Q6. Describe the testing strategy you used for your test cases to confirm `smarterSum` is working correctly.
+A6. TODO: we know 28 is a perfect number so I choose 27 and 29 also 25 which is a sqrt int number.
+
+Q7. Record your timing results for `findPerfectsSmarter` into a table.
+A7. TODO:
+     600000｜   3.318s｜
+-----------｜---------｜----------------
+           ｜         ｜
+    1200000｜   8.506s｜
+-----------｜---------｜----------------
+           ｜         ｜
+    2400000｜  23.797s｜
+-----------｜---------｜----------------
+           ｜         ｜
+    4800000｜  78.089s｜
+-----------｜---------｜----------------
+           ｜         ｜
+           发现单独跑一个数量的测试和4个倍增的数量测试，最后的计算时间不同 可能是计算机跑一会导致的计算能力下降。
+
+Q8. Make a prediction: how long will `findPerfectsSmarter` take to reach the fifth perfect number?
+A8. TODO: 33,000,000/4800000 = 6.875. So the time is 6.875*sqrt(6.875) = 18.026 times. So it will take about 18min.
+
+Q9. Explain how you chose your specific test cases and why they lead you to be confident `findNthPerfectEuclid` is working correctly.
+A9. TODO: first using 1 cause 1 is a boundary number.not figure out other reason.
+
+Soundex
+-------
+
+Q10. What is the Soundex code for "Angelou"? What is the code for your own surname?
+A10. TODO:"Angelou" = A524; Jia = J000
+
+Q11. Before writing any code, brainstorm your plan of attack and sketch how you might decompose the work into smaller tasks. Briefly describe your decomposition strategy.
+A11. TODO:1.按顺序判断每一个字符是啥，并转化为数字；当发现他不是字母时，就不做任何操作。
+          2.判断数字是否有重复，并将重复消除
+          3.判断处理后的数字的位数，保证为4
+          4.将第一位数字变成字符
+
+Q12. Think about one or more examples of a class of names that the Soundex system might not work well for. Explain what this class of names is and why the system might incorrectly group them or mis-categorize one of the names.
+A12. TODO：sanbol'angel和sandials'bolso等有着较长前缀的词
+
+Q13. Suppose you are a software engineer working for the U.S. government. You have been tasked with implementing a system that collects names as part of the Census survey and analyzes these names using a phonetic algorithm. Your boss suggests using Soundex and notes that the algorithm is only expected to work for ASCII-encoded strings, since supporting Unicode would require extra work and time. What would your response be and why? What representational harms might result from building a system that exclusively uses Soundex and/or ASCII?
+A13. TODO：没想法
+
+
